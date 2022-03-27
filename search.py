@@ -20,8 +20,6 @@ response = requests.get(geocoder_api_server, params=geocoder_params)
 
 # Преобразуем ответ в json-объект
 json_response = response.json()
-with open('geo.txt', 'w') as f:
-    f.write(str(json_response))
 
 # Получаем первый топоним из ответа геокодера.
 
